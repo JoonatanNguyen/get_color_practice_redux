@@ -7,15 +7,16 @@ import history from '../history';
 import CustomAlertContent from '../components/common/CustomAlertContent';
 import RoutePathConstants from '../constants/RoutePathConstants';
 import PatientsRanking from './screens/PatientsRanking';
+import PracticeRedux from './screens/PracticeRedux';
 import LoadingOverlayContainer from '../containers/LoadingOverlayContainer';
 
-const { ranking } = RoutePathConstants;
+const { practiceRedux } = RoutePathConstants;
 
 class App extends Component {
   componentDidMount() {
     // Sample action to be sent
     // this.props.sendSampleAction();
-    history.push(`/${ranking}`);
+    history.push(`/${practiceRedux}`);
   }
 
   render() {
@@ -32,7 +33,8 @@ class App extends Component {
             contentTemplate={CustomAlertContent}
           />
           <Switch>
-            <Route exact path={`/${ranking}`} component={PatientsRanking} />
+            {/*<Route exact path={`/${ranking}`} component={PatientsRanking} />*/}
+            <Route exact path={`/${practiceRedux}`} component={PracticeRedux} />
           </Switch>
         </div>
       </Router>

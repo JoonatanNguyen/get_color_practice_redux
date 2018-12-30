@@ -7,5 +7,9 @@ export default {
 
   getRanking() {
     return `${this.base}/ranking`;
+  },
+
+  getColor() {
+    return `${this.base}/practice`;
   }
 };

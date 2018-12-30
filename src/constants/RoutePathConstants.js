@@ -1,3 +1,3 @@
 import tokeys from 'tokeys';
 
-export default tokeys(['ranking']);
+export default tokeys(['practiceRedux']);
